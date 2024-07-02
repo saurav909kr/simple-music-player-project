@@ -1,0 +1,47 @@
+<!DOCTYPE htmlsong-img>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc0fa19f22.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple music player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="media/music-pic.jpeg" alt="music-pic" class="song-img">
+            <h1>Udit,Alka,Salman</h1>
+            <p>Chand_Chhupa_Badal_Mein_Lyrical</p>
+
+            <audio id="song">
+                <source src="media/Chand_Chhupa_Badal_Mein_Lyrical_Video___Hum_Dil_De_Chuke_Sanam___Udit_N,Alka_Y_Salman,_Aishwarya_Rai(48k).mp3" type="audio/mp3">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPaush()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+</body>
+
+</html>
